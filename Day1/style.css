@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 62.5%;
+}
+.main {
+    display: flex;
+    width: 90vw;
+}
+.panel {
+    height: 80vh;
+    flex: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1em;
+    border-radius: 6em;
+    transition: flex 0.5s ease-in;
+    cursor: pointer;
+}
+.panel1 {
+    background-image: url("./img/woman-g9c04d05e3_1920.jpg");
+}
+.panel2 {
+    background-image: url("./img/sexy-girl-g2943eaf11_1920.jpg");
+}
+.panel3 {
+    background-image: url("./img/peach-blossom-g161a55af6_1920.jpg");
+}
+.panel4 {
+    background-image: url("./img/female-gd3fed653b_1920.jpg");
+}
+.panel5 {
+    background-image: url("./img/ao-dai-g143ba3a05_1920.jpg");
+}
+.active {
+    flex: 5;
+}
