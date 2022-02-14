@@ -9,11 +9,15 @@
     </head>
     <body>
         <div class="main">
-            <div class="panel panel1 active"><h3>Explore The World</h3></div>
-            <div class="panel panel2"><h3>Wild Forest</h3></div>
-            <div class="panel panel3"><h3>Sunny Beach</h3></div>
-            <div class="panel panel4"><h3>City on Winter</h3></div>
-            <div class="panel panel5"><h3>Mountains - Clouds</h3></div>
+            <div class="progress__main">
+                <div class="progress__sub" style="width: 0%"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+            <button id="prev" class="btn">Prev</button>
+            <button id="next" class="btn">Next</button>
         </div>
         <script src="./main.js"></script>
     </body>
