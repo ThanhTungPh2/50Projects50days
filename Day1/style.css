@@ -5,69 +5,55 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,
 body {
-    font-family: "Muli", sans-serif;
-    display: flex;
+    display: flex; /*Căn chỉnh cho main ở giữa*/
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
-    font-size: 62.5%;
 }
 .main {
+    width:90vw;
     display: flex;
-    width: 90vw;
 }
 .panel {
+    width: 90vw;
     height: 80vh;
-    flex: 0.5;
+    flex:0.5;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 1em;
-    border-radius: 6em;
-    transition: flex 0.5s ease-in;
-    cursor: pointer;
+    border-radius: 30px;
+    margin:10px;
     position: relative;
-}
-.panel h3 {
-    font-size: 3.4em;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-    color: #fff;
-}
-.panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+    cursor: pointer;
+    transition: flex 0.5s ease-in;/* transition chuyển cảnh /thuộc tính thay đổi/time/thể loại*/
 }
 .panel1 {
-    background-image: url("./img/woman-g9c04d05e3_1920.jpg");
+    background-image: url("./img/ao-dai-g143ba3a05_1920.jpg")
 }
 .panel2 {
-    background-image: url("./img/sexy-girl-g2943eaf11_1920.jpg");
+    background-image: url("./img/female-gd3fed653b_1920.jpg")
 }
 .panel3 {
-    background-image: url("./img/peach-blossom-g161a55af6_1920.jpg");
+    background-image: url("./img/peach-blossom-g161a55af6_1920.jpg")
 }
 .panel4 {
-    background-image: url("./img/female-gd3fed653b_1920.jpg");
+    background-image: url("./img/sexy-girl-g2943eaf11_1920.jpg")
 }
 .panel5 {
-    background-image: url("./img/ao-dai-g143ba3a05_1920.jpg");
+    background-image: url("./img/woman-g9c04d05e3_1920.jpg")
+}
+.panel h3 {
+    position: absolute;
+    bottom: 2%;
+    left: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 .active {
     flex: 5;
 }
-@media (max-width: 480px) {
-    .main {
-        width: 100vw;
-    }
-    .panel:nth-child(4),
-    .panel:last-child {
-        display: none;
-    }
+.active h3 {
+    opacity: 1;
 }
